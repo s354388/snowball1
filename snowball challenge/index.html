@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="snowball.css">
+	<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+	<nav class="navbar">
+    <a href="#" class="navbar-brand"><span>F</span>ast<span>F</span>ashion</a>
+ 
+	    <ul>
+		     <li><a href="#about">About Us</a></li>
+		    <li><a href="#issue">Issues</a></li>
+		    <li><a href="#action">Take Action</a></li>
+		      <li><a href="#contact">Contact</a></li>
+	    </ul>
+
+
+	    <button class="navbar-toggler">
+	      <span></span>
+	    </button>
+	 </nav>
+
+  <header class="intro">
+ 	<div class="intro-text">
+ 		<h1>Fast fashion is <span></span></h1>
+ 	</div>
+  </header>
+
+
+	  <section id="about" class="container">
+	  	<div class="text">
+	  		<h2>About us</h2>
+	  		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo officiis esse praesentium neque. Alias inventore placeat incidunt nostrum consequatur dolor debitis, nesciunt culpa, accusantium harum deleniti rem voluptatibus unde.</p>
+	  		<p>lorem</p>
+	  	</div>
+	  </section>
+
+	  <section id="issue" class="container">
+	  	<h2>Issue</h2>
+	  	<p>Lorem ipsum, dolor sit amet consectetur, adipisicing elit. In tempore nisi nemo ea ratione, rem voluptatum optio, saepe odit illo itaque totam, velit, maxime impedit quam fuga consequatur! Ducimus, aspernatur!</p>
+	  </section>
+
+	  <section id="action" class="container">
+	  	<div class="take-tekst">
+	  		<h2>Take Action</h2>
+	  	</div>
+	  	<div class="take-action">
+	  		<div class="ta">
+	  			<div class="reduse">
+	  				<h1>Reduse</h1>
+	  				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A et ad inventore debitis nam accusamus doloremque provident itaque dolorum vero?</p>
+	  			</div>
+
+	  			<div class="reuse">
+	  				<h1>Reuse</h1>
+	  				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A et ad inventore debitis nam accusamus doloremque provident itaque dolorum vero?</p>
+	  			</div>
+
+	  			<div class="recicle">
+	  				<h1>Recycle</h1>
+	  				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A et ad inventore debitis nam accusamus doloremque provident itaque dolorum vero?</p>
+	  			</div>
+
+	  			<div class="research">
+	  				<h1>Research</h1>
+	  				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A et ad inventore debitis nam accusamus doloremque provident itaque dolorum vero?</p>
+	  			</div>
+
+	  		</div>
+	  	</div>
+
+
+	  </section>
+
+	  <section id="contact" class="container">
+	  	<div class="intro-con">
+	  		<h2>#AgainstFastFashion</h2>
+	  	</div>
+
+	  	<div class="form">
+	  		<div class="contact-form">
+	  			<h1>Contact Us</h1>
+	  		 		<div class="form-input">
+		  		 		<label>Full name</label>
+		  		 		<input type="text" placeholder="Enter your name">
+	  		 		</div>
+
+	  		 		<div class="form-input">
+		  		 		<label>Email</label>
+		  		 		<input type="text" placeholder="Enter your Email">
+	  		 		</div>
+
+	  		 		<div class="form-input">
+		  		 		<label>Subject</label>
+		  		 		<input type="text" placeholder="Enter your subject">
+	  		 		</div>
+
+	  		 		<div class="form-input">
+		  		 		<label>Message</label>
+		  		 		<textarea placeholder="Write your message"></textarea>
+	  		 		</div>
+	  		 		<a class="btn" href="">send</a>
+	  		</div>
+	  	</div>
+
+	  </section>
+
+	  <script type="text/javascript">
+		const navbarToggler = document.querySelector(".navbar-toggler");
+		const navbarMenu = document.querySelector(".navbar ul");
+		const navbarLinks = document.querySelectorAll(".navbar a");
+
+		navbarToggler.addEventListener("click", navbarTogglerClick);
+
+		function navbarTogglerClick() {
+		  navbarToggler.classList.toggle("open-navbar-toggler");
+		  navbarMenu.classList.toggle("open");
+		}
+
+		navbarLinks.forEach(elem => elem.addEventListener("click", navbarLinkClick));
+
+		function navbarLinkClick() {
+		  if(navbarMenu.classList.contains("open")) {
+		    navbarToggler.click();
+		  }
+		}
+	  </script>
+</body>
+</html>
