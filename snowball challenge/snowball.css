@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: ;
   background-color: #fff;
   color: #333;
+  overflow-x: hidden;s
 }
 .navbar {
   background-color: rgba(0,0,0,0.5);
@@ -248,6 +250,7 @@ a{
 #issues .issues{
   flex-direction: column;
   max-width: 1200px;
+  height: 250vh;
   margin: 0 auto;
   padding: 100px 0;
 }
@@ -272,6 +275,7 @@ a{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  height: 200vh;
 }
 
 #issues .issue-item{
@@ -398,31 +402,93 @@ a{
 /*-- End Media query for Desktop --*/
 
 
-#action {
-	background-color: #333;
+#action { 
+  background-color: #3CA354; 
+}
+
+.take-tekst{
+  top: 2%;
+  left: 40%;
+  transform: translate(-2%,-40%);
+  position: absolute;
+  width: 100%;
+ letter-spacing: 1px;
+
 }
 
 .take-action{
   height: 500px;
   width: 100%;
   position: relative;
-
+ 
 }
 
 .take-action .ta{
-  height: 400px;
+  height: 200px;
   width: 90%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
   grid-gap: 20px;
   padding: 20px;
-  margin-top: 80px;
+  margin-top: 60px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-
 }
+
+.reduse {
+  background-color: rgba(124,124,125,0.4);
+  box-shadow: 0 15px 45px rgba(0,0,0,.1);
+}
+
+.reduse img{
+  height: 300px;
+  width: 100%;
+}
+
+.reuse {
+  padding: 20px;
+  background-color: rgba(124,124,125,0.4);
+  box-shadow: 0 15px 45px rgba(0,0,0,.1);
+}
+
+.reuse h1{
+  margin-bottom: 10px;
+}
+
+.reuse p{
+  line-height: 1.5
+}
+
+.recicle {
+  padding: 20px;
+  background-color: rgba(124,124,125,0.4);
+  box-shadow: 0 15px 45px rgba(0,0,0,.1);
+}
+
+.recicle h1{
+  margin-bottom: 10px;
+}
+
+.recicle p{
+  line-height: 1.5
+}
+
+.research {
+  padding: 20px;
+  background-color: rgba(125,125,125,0.4);
+  box-shadow: 0 20px 50px rgba(0,0,0,.1);
+}
+
+.research h1{
+  margin-bottom: 10px;
+}
+
+.research p{
+  line-height: 1.5
+}
+
 
 #contact{
 	background-image: url(2.jpg);
