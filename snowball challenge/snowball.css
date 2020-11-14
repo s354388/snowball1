@@ -74,7 +74,7 @@ body {
 }
 
 .intro .intro-text{
-	
+
 	top: 50%;
  	left: 50%;
   transform: translate(-50%, -50%);
@@ -119,7 +119,7 @@ body {
 		content: 'unsustainable'
 	}
 
-	
+
 }
 .container {
   position: relative;
@@ -143,24 +143,270 @@ body {
   font-weight: bold;
 }
 
+/*-- About section */
 
-
-
-#about { 
-	background-color: #e34f26; 
+.about-section{
+	background: url(imgD.png) no-repeat left;
+  background-size: 55%;
+  background-color: #5D8AA8;
+  overflow: hidden;
+  padding: 150px 0;
+  font-family: 'Montserrat', sans-serif;
 }
-#issue { 
-	background-color: #002561; 
+
+.inner-container{
+  width: 55%;
+  float: right;
+  background-color: /*#fdf9ef  #e8eae6*/#e1e1dd;
+  padding: 105.9px;
 }
-#action { 
-	background-color: #333; 
+
+.inner-container h1{
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: 900;
+  color: black;
+}
+
+.inner-container h1 span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: #002147;
+}
+
+
+.txt{
+  font-size: 16px;
+  color: #003366;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+.us{
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.us .cta{
+  display: inline-block;
+  padding: 10px 30px;
+  color: #002147;
+  background-color: transparent;
+  border: 2px solid #002147;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: 30px;
+}
+
+.us .cta:hover{
+  color: white;
+  background-color: #002147;
+}
+
+@media screen and (max-width: 1200px) {
+  .inner-container{
+    padding: 80px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about-section{
+    background-size: 100%;
+    padding: 100px 40px;
+  }
+  .inner-container{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-section{
+    padding: 0;
+  }
+  .inner-container{
+    padding: 60px;
+  }
+}
+
+a{
+  text-decoration: none;
+
+}
+
+/*-- End About section */
+
+
+/*-- Issue section --*/
+
+#issues .issues{
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+#issues .section-title{
+  font-size: 4rem;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#issues .issues-header h1{
+  margin-bottom: 50px;
+}
+
+#issues .all-issues{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#issues .issue-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#issues .issue-info{
+  padding: 30px;
+  flex-basis: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(60deg, #29323c 0%, #6f8094 100%);
+  color: white;
+}
+
+#issues .issue-info h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+#issues .issue-info p{
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 10px;
+  line-height: 30px;
+  font-size: 17px;
+  letter-spacing: 3px;
+}
+
+#issues .issue-img{
+  flex-basis: 50%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+#issues .issue-img::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(60deg, #29323c 0%, #6f8094 100%);
+  opacity: 0.5;
+}
+
+#issues .issue-img img{
+  transition: 0.3s ease transform;
+}
+
+#issues .issue-item:hover .issue-img img{
+  transform: scale(1.1);
+}
+
+/*-- End Issue section --*/
+
+/*-- Media query for Tablet/Desktop --*/
+
+@media only screen and (min-width: 768px) {
+
+  h1.section-title{
+    font-size: 7rem;
+  }
+
+  #issues .issue-item{
+    flex-direction: row;
+  }
+
+  #issues .issue-item:nth-child(even){
+    flex-direction: row-reverse;
+  }
+
+  #issues .issue-item{
+    height: 400px;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  #issues .all-issues .issue-info{
+    height: 100%;
+  }
+
+  #issues .all-issues .issue-img{
+    height: 100%;
+  }
+
+}
+
+#issues .issue-item{
+  flex-direction: row;
+}
+
+#issues .issue-item:nth-child(even){
+  flex-direction: row-reverse;
+}
+
+#issues .issue-item{
+  height: 400px;
+  margin: 0;
+  width: 100%;
+  border-radius: 0;
+}
+
+#issues .all-issues .issue-info{
+  height: 100%;
+}
+
+#issues .all-issues .issue-img{
+  height: 100%;
+}
+
+/*-- End Media query for Desktop --*/
+
+
+#action {
+	background-color: #333;
 }
 
 .take-action{
   height: 500px;
   width: 100%;
   position: relative;
- 
+
 }
 
 .take-action .ta{
@@ -242,9 +488,6 @@ body {
   text-decoration: none;
 }
 
-
-
-
 @media (max-width: 991px) {
   .navbar ul {
     padding: 0 10px;
@@ -273,7 +516,7 @@ body {
   }
   .navbar ul li {
     width: 100%;
-  
+
   }
   .navbar ul li a {
     padding: 0;
@@ -310,9 +553,9 @@ body {
   .navbar .navbar-toggler span::after {
     transform: translateY(5px);
   }
-  
+
   .navbar .navbar-toggler.open-navbar-toggler span {
- 
+
     background-color: transparent;
   }
   .navbar .navbar-toggler.open-navbar-toggler span::before {
