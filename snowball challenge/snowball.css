@@ -414,6 +414,13 @@ a{
  
 }
 
+@media (max-width: 450px) {
+  .take-tekst{
+    top: 0;
+    left: 0;
+  }
+}
+
 .take-action .ta{
   height: 200px;
   width: 90%;
