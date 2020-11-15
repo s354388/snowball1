@@ -3,12 +3,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 body {
   font-family: ;
   background-color: #fff;
   color: #333;
-  overflow-x: hidden;s
+  overflow-x: hidden;
 }
 .navbar {
   background-color: rgba(0,0,0,0.5);
@@ -95,7 +96,8 @@ body {
 .intro-text span:before{
 	content: '';
 	animation:animate infinite 8s;
-	color: #8C1111;
+	font-weight: 700;
+  	letter-spacing: 2px;
 }
 
 @keyframes animate {
@@ -103,22 +105,11 @@ body {
 		content: ' The hidden problem'
 	}
 
-	20%{
+	50%{
 		content: 'unsustainable'
 	}
-	40%{
-		content: ' luxurious pollution'
-	}
-
-	60%{
-		content: 'The hidden problem'
-	}
-	80%{
-		content: ' luxurious pollution'
-	}
-
 	100%{
-		content: 'unsustainable'
+		content: ' luxurious pollution'
 	}
 
 
@@ -421,6 +412,13 @@ a{
   width: 100%;
   position: relative;
  
+}
+
+@media (max-width: 450px) {
+  .take-tekst{
+    top: 0;
+    left: 0;
+  }
 }
 
 .take-action .ta{
