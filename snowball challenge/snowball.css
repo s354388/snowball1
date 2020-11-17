@@ -241,7 +241,7 @@ a{
 #issues .issues{
   flex-direction: column;
   max-width: 1200px;
-  height: 250vh;
+  height: 650vh;
   margin: 0 auto;
   padding: 100px 0;
 }
@@ -266,7 +266,7 @@ a{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 200vh;
+  height: 600vh;
 }
 
 #issues .issue-item{
@@ -302,7 +302,7 @@ a{
   font-family: 'Montserrat', sans-serif;
   margin-top: 10px;
   line-height: 30px;
-  font-size: 17px;
+  font-size: 15px;
   letter-spacing: 3px;
 }
 
@@ -338,7 +338,23 @@ a{
 
 @media only screen and (min-width: 768px) {
 
-  h1.section-title{
+  #issues .issues{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+    height: 250vh;
+  }
+
+  #issues .all-issues{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 200vh;
+  }
+
+  .section-title h1{
     font-size: 7rem;
   }
 
@@ -367,34 +383,10 @@ a{
 
 }
 
-#issues .issue-item{
-  flex-direction: row;
-}
-
-#issues .issue-item:nth-child(even){
-  flex-direction: row-reverse;
-}
-
-#issues .issue-item{
-  height: 400px;
-  margin: 0;
-  width: 100%;
-  border-radius: 0;
-}
-
-#issues .all-issues .issue-info{
-  height: 100%;
-}
-
-#issues .all-issues .issue-img{
-  height: 100%;
-}
-
 /*-- End Media query for Desktop --*/
 
-
-#action { 
-  background-color: #3CA354; 
+#action {
+  background-color: #3CA354;
 }
 
 @media (max-width: 550px) {
@@ -429,7 +421,7 @@ a{
   height: 500px;
   width: 100%;
   position: relative;
- 
+
 }
 
 @media (max-width: 450px) {
