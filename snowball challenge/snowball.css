@@ -441,6 +441,7 @@ a{
 
 }
 
+<<<<<<< HEAD
 /*--------------------Action section--------------------*/
 
 #action {
@@ -450,13 +451,36 @@ a{
 
 
 @media (max-width: 1000px) {
+=======
+/*-- End Media query for Desktop --*/
+
+#action {
+  background-color: #3CA354;
+}
+
+@media (max-width: 550px) {
   #action{
     height: 220vh;
   }
 }
 
+@media (max-width: 550px) {
+>>>>>>> 3fed369e785fac4f244fa65e38f8ffff6e25cbe6
+  #action{
+    height: 220vh;
+  }
+}
+
+<<<<<<< HEAD
 
 
+=======
+@media (max-width: 800px) {
+  #action{
+    height: 220vh;
+  }
+}
+>>>>>>> 3fed369e785fac4f244fa65e38f8ffff6e25cbe6
 
 .take-tekst{
   top: 2%;
