@@ -397,6 +397,24 @@ a{
   background-color: #3CA354; 
 }
 
+@media (max-width: 550px) {
+  #action{
+    height: 220vh;
+  }
+}
+
+@media (max-width: 550px) {
+  #action{
+    height: 220vh;
+  }
+}
+
+@media (max-width: 800px) {
+  #action{
+    height: 220vh;
+  }
+}
+
 .take-tekst{
   top: 2%;
   left: 40%;
