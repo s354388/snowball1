@@ -474,6 +474,13 @@ a{
   }
 }
 
+@media (max-width: 300px) {
+  #action{
+    height: 240vh;
+  }
+}
+
+
 .container2  h2{
   top: 10%;
   left: 35%;
