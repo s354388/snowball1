@@ -354,7 +354,7 @@ a{
 
 #issues .issue-info h1{
   font-family: 'Montserrat', sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 500;
 }
 
@@ -403,6 +403,10 @@ a{
     margin: 0 auto;
     padding: 100px 0;
     height: 250vh;
+  }
+
+  #issues .issue-info h1{
+    font-size: 30px;
   }
 
   #issues .all-issues{
@@ -635,4 +639,3 @@ a{
   width: 100%;
   text-decoration: none;
 }
-
