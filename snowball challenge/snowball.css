@@ -456,22 +456,51 @@ a{
   background-color: #3CA354;
 }
 
+@media (max-width: 1000px) {
+  #action{
+    height: 130vh;
+  }
+}
+
 @media (max-width: 800px) {
+  #action{
+    height: 160vh;
+  }
+}
+
+@media (max-width: 500px) {
   #action{
     height: 170vh;
   }
 }
 
-.container2 .take-tekst h2{
+.container2  h2{
   top: 10%;
   left: 35%;
   position: absolute;
   width: 100%;
- letter-spacing: 1px;
- font-size: 3.5em;
+ letter-spacing: 5px;
+ font-size: 60px;
 
 }
 
+@media (max-width: 900px) {
+  .container2 h2{
+    font-size: 60px;
+    letter-spacing: 0;
+    top: 10%;
+    left: 20%;
+  } 
+}
+
+@media (max-width: 500px) {
+  .container2 h2{
+    font-size: 50px;
+    letter-spacing: 0;
+    top: 10%;
+    left: 10%;
+  } 
+}
 
 .take-action{
   height: 500px;
@@ -520,6 +549,9 @@ a{
  .reuse, .recicle, .research p{
   line-height: 1.5
 }
+
+
+
 
 
 
