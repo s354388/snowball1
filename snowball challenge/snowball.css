@@ -88,11 +88,13 @@ body {
 }
  .intro-text h1{
 	color: #fff;
-	font-size: 50px;
+	font-size: 4em;
 	text-shadow: 0 2px 0 rgba(0,0,0,0.5);
 	width: 100%;
 	font-weight: bold;
 }
+
+
 
 .intro-text span:before{
 	content: '';
@@ -291,10 +293,10 @@ a{
 
 }
 
-/*-- End About section */
 
 
-/*-- Issue section --*/
+
+/*------------------------Issue section---------------------------*/
 
 #issues .issues{
   flex-direction: column;
@@ -390,9 +392,8 @@ a{
   transform: scale(1.1);
 }
 
-/*-- End Issue section --*/
 
-/*-- Media query for Tablet/Desktop --*/
+/*------------------------------- Media query for Tablet/Desktop -----------------------*/
 
 @media only screen and (min-width: 768px) {
 
@@ -442,7 +443,7 @@ a{
 }
 
 
-/*--------------------Action section--------------------*/
+/*-------------------------------Action section------------------------------*/
 
 
 #action {
@@ -451,19 +452,20 @@ a{
 
 @media (max-width: 800px) {
   #action{
-    height: 220vh;
+    height: 170vh;
   }
 }
 
-.take-tekst{
-  top: 2%;
-  left: 40%;
-  transform: translate(-2%,-40%);
+.container2 .take-tekst h2{
+  top: 10%;
+  left: 35%;
   position: absolute;
   width: 100%;
  letter-spacing: 1px;
+ font-size: 3.5em;
 
 }
+
 
 .take-action{
   height: 500px;
@@ -472,20 +474,12 @@ a{
 
 }
 
-@media (max-width: 550px) {
-  .take-tekst{
-    top: 0;
-    left: 30%;
-    font-size: 50%;
-  }
-}
-
 
 .take-action .ta{
   height: 200px;
   width: 90%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
   grid-gap: 20px;
   padding: 20px;
   margin-top: 60px;
@@ -501,7 +495,7 @@ a{
  }
 }
 
-.reduse {
+.reduse, .reuse, .recicle, .research{
   background-color: rgba(124,124,125,0.4);
   box-shadow: 0 15px 45px rgba(0,0,0,.1);
 }
@@ -511,50 +505,20 @@ a{
   width: 100%;
 }
 
-.reuse {
-  padding: 20px;
-  background-color: rgba(124,124,125,0.4);
-  box-shadow: 0 15px 45px rgba(0,0,0,.1);
-}
 
-.reuse h1{
+ .reuse, .recicle, .research h1{
   margin-bottom: 10px;
+  padding: 5px;
 }
 
-.reuse p{
-  line-height: 1.5
-}
-
-.recicle {
-  padding: 20px;
-  background-color: rgba(124,124,125,0.4);
-  box-shadow: 0 15px 45px rgba(0,0,0,.1);
-}
-
-.recicle h1{
-  margin-bottom: 10px;
-}
-
-.recicle p{
-  line-height: 1.5
-}
-
-.research {
-  padding: 20px;
-  background-color: rgba(125,125,125,0.4);
-  box-shadow: 0 20px 50px rgba(0,0,0,.1);
-}
-
-.research h1{
-  margin-bottom: 10px;
-}
-
-.research p{
+ .reuse, .recicle, .research p{
   line-height: 1.5
 }
 
 
-/*--------------------------Contact section----------------*/
+
+
+/*--------------------------Contact section-------------------------------*/
 
 #contact{
 	background-image: url(2.jpg);
@@ -567,7 +531,11 @@ a{
   height: 100vh;
   color: #fff;
 }
-
+.container2{
+  position: relative;
+  height: 120vh;
+  color: #fff;
+}
 .container h2 {
   position: absolute;
   font-size: 50px;
