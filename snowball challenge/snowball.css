@@ -480,7 +480,7 @@ a{
   position: relative;
   height: 120vh;
   color: #fff;
-  
+
   }
 
 .container2  h2{
@@ -499,7 +499,7 @@ a{
     letter-spacing: 0;
     top: 10%;
     left: 20%;
-  } 
+  }
 }
 
 @media (max-width: 500px) {
@@ -508,7 +508,7 @@ a{
     letter-spacing: 0;
     top: 10%;
     left: 10%;
-  } 
+  }
 }
 
 .take-action{
@@ -636,6 +636,13 @@ a{
   }
 }
 
+@media (min-width: 768px) {
+  .form{
+    top: 80%;
+    left: 80%;
+  }
+}
+
 
 @media(max-width: 600px) {
   .form{
@@ -699,6 +706,3 @@ a{
   width: 100%;
   text-decoration: none;
 }
-
-
-
