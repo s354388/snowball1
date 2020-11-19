@@ -101,23 +101,25 @@ body {
 
 .intro-text span:before{
 	content: '';
-	animation:animate infinite 8s;
+	animation: animate infinite 8s;
 	font-weight: 700;
   letter-spacing: 2px;
 }
 
+
 @keyframes animate {
 	0%{
-		content: ' The hidden problem'
+		content: 'is The hidden problem'
 	}
 
 	50%{
-		content: 'unsustainable'
+		content: 'is unsustainable'
 	}
 	100%{
-		content: ' luxurious pollution'
+		content: ' is luxurious pollution'
 	}
 }
+
 
 
 @media (max-width: 991px) {
@@ -474,7 +476,12 @@ a{
   }
 }
 
-
+.container2{
+  position: relative;
+  height: 120vh;
+  color: #fff;
+  
+  }
 
 .container2  h2{
   top: 10%;
@@ -624,10 +631,11 @@ a{
 
 @media(max-width: 1350px) {
   .form{
-  top: 96%;
+  top: 90%;
   left: 75%;
   }
 }
+
 
 @media(max-width: 600px) {
   .form{
@@ -635,9 +643,6 @@ a{
   left: 75%;
   }
 }
-
-
-
 
 
 .contact-form h1{
@@ -697,10 +702,3 @@ a{
 
 
 
-/*
-.container2{
-  position: relative;
-  height: 120vh;
-  color: #fff;
-}
-*/
